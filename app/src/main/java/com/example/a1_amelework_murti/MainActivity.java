@@ -84,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
         double pay;
         double overtimePay = 0;
 
+        // Validate input
+        if (hours <= 0 || rate <= 0) {
+            android.widget.Toast.makeText(this,
+                    "Error: Please enter valid positive numbers!",
+                    android.widget.Toast.LENGTH_LONG).show();
+            return; // stop calculation
+        }
+
         if (hours <= 40) {
             pay = hours * rate;
         } else {

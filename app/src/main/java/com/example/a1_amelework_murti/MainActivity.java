@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         tvTotal.setText("Total Pay: " + pay);
         tvTax.setText("Tax: " + tax);
 
-        Toast.makeText(this, "Calculation Successful!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Calculation Successful!", Toast.LENGTH_SHORT).show();
 
 
         // Create a string record of the calculation
@@ -119,6 +119,9 @@ public class MainActivity extends AppCompatActivity {
         // Add record to static list
         paymentHistory.add(record);
 
+        android.widget.Toast.makeText(this,
+                "Payment calculation successful!",
+                android.widget.Toast.LENGTH_SHORT).show();
 
     }
 }

@@ -15,12 +15,35 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+// Static list to store all payment records
+public static java.util.ArrayList<String> paymentHistory = new java.util.ArrayList<>();
+
+
 public class MainActivity extends AppCompatActivity {
 
 
     EditText etHours, etRate;
     Button btnCalculate;
     TextView tvPay, tvOvertime, tvTotal, tvTax;
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(android.view.MenuItem item) {
+        if (item.getItemId() == R.id.action_details) {
+            //bottom line opens DetailActivity
+            android.content.Intent intent = new android.content.Intent(this, DetailActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,5 +100,17 @@ public class MainActivity extends AppCompatActivity {
         tvTax.setText("Tax: " + tax);
 
         Toast.makeText(this, "Calculation Successful!", Toast.LENGTH_SHORT).show();
+
+
+        // Create a string record of the calculation
+        String record = "Hours: " + hours +
+                ", Rate: " + rate +
+                ", Total Pay: " + pay +
+                ", Tax: " + tax;
+
+        // Add record to static list
+        paymentHistory.add(record);
+
+
     }
 }

@@ -7,6 +7,9 @@ import android.widget.ListView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.a1_amelework_murti.MainActivity;
+import com.example.a1_amelework_murti.R;
+
 public class DetailActivity extends AppCompatActivity {
 
     @Override

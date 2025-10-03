@@ -15,12 +15,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-// Static list to store all payment records
-public static java.util.ArrayList<String> paymentHistory = new java.util.ArrayList<>();
+
 
 
 public class MainActivity extends AppCompatActivity {
 
+    // Static list to store all payment records
+    public static java.util.ArrayList<String> paymentHistory = new java.util.ArrayList<>();
 
     EditText etHours, etRate;
     Button btnCalculate;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(android.view.MenuItem item) {
         if (item.getItemId() == R.id.action_details) {
             //bottom line opens DetailActivity
-            android.content.Intent intent = new android.content.Intent(this, DetailActivity.class);
+            android.content.Intent intent = new android.content.Intent(this, com.example.a1_amelework_murti2.DetailActivity.class);
             startActivity(intent);
             return true;
         }

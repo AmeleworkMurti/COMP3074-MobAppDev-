@@ -1,5 +1,7 @@
 package com.example.a1_amelework_murti;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(android.view.MenuItem item) {
         if (item.getItemId() == R.id.action_details) {
             //bottom line opens DetailActivity
-            android.content.Intent intent = new android.content.Intent(this, com.example.a1_amelework_murti2.DetailActivity.class);
+            android.content.Intent intent = new android.content.Intent(this, com.example.a1_amelework_murti.DetailActivity.class);
             startActivity(intent);
             return true;
         }

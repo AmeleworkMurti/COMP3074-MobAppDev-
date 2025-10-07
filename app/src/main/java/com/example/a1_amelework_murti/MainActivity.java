@@ -118,12 +118,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Create a string record of the calculation
         String record = "Hours: " + hours +
-                ", Rate: " + rate +
-                ", Total Pay: " + pay +
-                ", Tax: " + tax;
-
-        // Add record to static list
+                "\nRate: " + rate +
+                "\nPay: " + pay +
+                "\nTax: " + tax;
         paymentHistory.add(record);
+
 
         android.widget.Toast.makeText(this,
                 "Payment calculation successful!",

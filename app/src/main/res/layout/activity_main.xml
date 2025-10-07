@@ -19,7 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter hours worked"
-        android:inputType="number" />
+        android:inputType="number"
+        android:padding="16dp"/>
 
     <!--  hourly rate -->
     <EditText
@@ -27,7 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter hourly rate"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:padding="16dp"/>
 
     <!-- calculate button -->
     <Button

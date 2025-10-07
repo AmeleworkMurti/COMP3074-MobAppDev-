@@ -5,7 +5,7 @@
     <!-- Menu item that opens DetailActivity -->
     <item
         android:id="@+id/action_details"
-        android:title="View Payments"
+        android:title="View Payment History"
         android:orderInCategory="100"
         app:showAsAction="never" />
 

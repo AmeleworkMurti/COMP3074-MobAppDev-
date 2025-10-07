@@ -7,7 +7,9 @@
     android:padding="16dp"
     android:background="#DBD9E7">
 
-<androidx.appcompat.widget.Toolbar
+
+
+ <androidx.appcompat.widget.Toolbar
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
@@ -63,5 +65,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tax:" />
+
 
 </LinearLayout>

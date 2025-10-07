@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                 "\nRate: " + rate +
                 "\nPay: " + pay +
                 "\nTax: " + tax;
-        paymentHistory.add(record);
+        paymentHistory.add(record);// add records to the static list
 
 
         android.widget.Toast.makeText(this,

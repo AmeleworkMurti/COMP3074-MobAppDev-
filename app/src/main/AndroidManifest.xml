@@ -13,7 +13,8 @@
         android:theme="@style/Theme.A1_Amelework_Murti">
         <activity
             android:name=".DetailActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
